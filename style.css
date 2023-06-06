@@ -1,0 +1,177 @@
+/* reset.css */
+
+/* style.css */
+
+/* Adicione o seguinte código CSS */
+
+/* Estilo geral */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Layout do header */
+header {
+  text-align: center;
+  padding: 20px;
+}
+
+.logoAlura {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Layout do main */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.text-area {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.informacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.informacao img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.btn-encriptar,
+.btn-desencriptar {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Layout do messageBox */
+.messageBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.btn-copiar {
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Layout do footer */
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.links li {
+  flex-basis: 30%;
+  margin-bottom: 10px;
+}
+
+.footer li a:hover {
+  color: #C78C19;
+  cursor: pointer;
+}
+
+
+.links a {
+  color: #4285F4;
+  text-decoration: none;
+}
+
+.btn-encriptar,
+.btn-desencriptar,
+.btn-copiar {
+  padding: 10px 20px;
+  background-color: #4285F4;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  /* Adicione esta propriedade para arredondar as bordas */
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+
+  /* Ajuste para telas maiores que 768px */
+  main {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  section {
+    margin-right: 20px;
+  }
+
+  .text-area,
+  .message {
+    width: 300px;
+    max-width: 100%;
+  }
+}
+
+.text-area,
+.message {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Media queries */
+@media screen and (max-width: 400px) {
+
+  .text-area,
+  .message {
+    max-width: 100%;
+  }
+}
